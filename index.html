@@ -9,18 +9,20 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
+      <script src="https://unpkg.com/axios@1.13.2/dist/axios.min.js"></script>
     />
     <title>Weather Application</title>
   </head>
   <body>
     <div class="weather-app">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city"
             required
             class="entry-input"
+            id="search-form-input"
           />
           <input type="submit" value="Search" class="submit-button" />
         </form>
@@ -28,7 +30,7 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city">Munich</h1>
+            <h1 class="weather-app-city" id="identified-city">Munich</h1>
             <p class="weather-details">
               Monday, 12:10 cloudy
               <br />
@@ -49,5 +51,6 @@
         <a href="#" target="_blank">Netlify</a>
       </footer>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
