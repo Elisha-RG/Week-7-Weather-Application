@@ -17,7 +17,7 @@ function updateWeather(response) {
   temperatureValue.innerHTML = Math.round(temperature);
   updateIcon.innerHTML = `<img src="${response.data.condition.icon_url}" class = "temperature-icon" />`;
 
-  displayForecast(response.data.city);
+  showForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -61,7 +61,7 @@ function showForecast(city) {
   axios(apiURL).then(displayForecast);
 }
 
-function displayForecast() {
+function displayForecast(response) {
   let days = ["Tue", "Wed", "Thurs", "Fri", "Sat"];
   let forecastHtml = "";
 

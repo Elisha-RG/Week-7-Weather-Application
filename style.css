@@ -97,8 +97,10 @@ header {
 }
 
 .forecast-icon {
-  text-align: center;
-  font-size: 38px;
+  width: 88x;
+  height: 88px;
+  display: block;
+  margin: 0 auto;
 }
 
 .forecast-temperatures {
